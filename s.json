@@ -1,0 +1,38 @@
+﻿{
+  "ConnectionStrings": {
+    "Default": "Server=localhost; Database=LoanManagementDb; Uid=root; Pwd=; Port=3306;default command timeout=360;"
+  },
+  "App": {
+    "ServerRootAddress": "http://localhost:21021/",
+    "ClientRootAddress": "http://localhost:4200/",
+    "CorsOrigins": "http://localhost:4200,http://localhost:8080,http://localhost:8081,http://localhost:3000,https://www.ezonlinemortgage.com,https://198.251.72.158"
+  },
+  "Authentication": {
+    "JwtBearer": {
+      "IsEnabled": "true",
+      "SecurityKey": "LoanManagement_C421AAEE0D114E9C",
+      "Issuer": "LoanManagement",
+      "Audience": "LoanManagement"
+    }
+  },
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://localhost:21021/"
+      }
+    }
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "Smtp": {
+    "Host": "smtp.gmail.com",
+    "Port": "587",
+    "Username": "myhourlysheet@gmail.com",
+    "Password": "shabIR@123"
+  }
+}
